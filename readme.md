@@ -1,4 +1,4 @@
-# lowvram_gui_gguf – Low-VRAM GUI for GGUF Models (llama.cpp)
+# lowvram.py – Low-VRAM GUI for GGUF Models (llama.cpp)
 
 A Tkinter GUI for running GGUF-quantized language models locally via
 [`llama-cpp-python`](https://github.com/abetlen/llama-cpp-python) — works even on cards with
@@ -147,7 +147,7 @@ Expected output: `True <your GPU name>`
 
 ## 7. Install llama-cpp-python with CUDA support
 
-This is the step that actually matters for `lowvram_gui_gguf.py` — the plain PyPI version of
+This is the step that actually matters for `lowvram.py` — the plain PyPI version of
 `llama-cpp-python` is usually a CPU-only build. GPU offloading (`n_gpu_layers`) needs a
 CUDA (cuBLAS) build.
 
@@ -204,7 +204,7 @@ Replace `<FILENAME>` with the actual file name shown in the repo's Files view.
 
 ```powershell
 venv\Scripts\activate
-python lowvram_gui_gguf.py
+python lowvram.py
 ```
 
 ---
