@@ -7301,7 +7301,8 @@ class LlamaServerEngine:
         if n_generated <= 1 or len(content) < 2:
             return False, (f"nur {n_generated} Token(s) generiert, "
                             f"finish_reason={finish_reason!r}, Content={content!r}")
-        return True, f"{n_generated} Tokens generiert"
+        preview = content if len(content) <= 200 else content[:200] + "…"
+        return True, f"{n_generated} Tokens generiert -- Text: {preview!r}"
 
     def _start_crash_watchdog(self):
         """Ueberwacht den Server-Prozess NACH dem 'bereit'-Status. Ohne das
