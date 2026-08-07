@@ -44,7 +44,7 @@ uploaded, and set the filename below accordingly.
 | OS | Windows 10/11 (this guide), Linux works analogously |
 | GPU | NVIDIA GPU with CUDA support (Compute Capability 6.0+) |
 | VRAM | usable from 4–6 GB (thanks to `n_gpu_layers` offloading); more VRAM = more layers on GPU = faster |
-| RAM | 16 GB minimum, 32 GB+ for larger models |
+| RAM | 8 GB minimum, 10 GB for larger models |
 | Python | 3.10–3.12 (3.11 recommended) |
 | Disk space | 5–10 GB for a 9B model depending on quantization |
 
