@@ -7775,7 +7775,7 @@ class App(tk.Tk):
 
         self.model_path_var = tk.StringVar(
 
-            value="D:/hf_out/Qwythos-9B-Claude-Mythos-5-1M-Q5_K_M.gguf"
+            value=""
 
         )
 
